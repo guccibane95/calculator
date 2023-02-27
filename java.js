@@ -12,9 +12,22 @@ function divide(a,b){
     return a/b
 }
 
-
-let display = 5
+let display = "placeholder"
 document.getElementById("screen").innerHTML=display
+
+
+function reset(){
+    let display = 0
+    document.getElementById("screen").innerHTML=display
+        
+}
+
+function changeDisplay(num){
+    display=num;
+    document.getElementById("screen").innerHTML=display
+}
+
+
 
 
 
