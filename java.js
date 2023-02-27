@@ -13,9 +13,10 @@ function divide(a,b){
 }
 
 let display = "placeholder"
+let newDisplay= ""
 document.getElementById("screen").innerHTML=display
 
-
+/*clear button*/
 function reset(){
     let display = 0
     document.getElementById("screen").innerHTML=display
@@ -23,8 +24,10 @@ function reset(){
 }
 
 function changeDisplay(num){
-    display=num;
-    document.getElementById("screen").innerHTML=display
+    newNum=num.toString();
+    newDisplay+=newNum
+    newDisplayNumber=Number(newDisplay)
+    document.getElementById("screen").innerHTML=newDisplay
 }
 
 
